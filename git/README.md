@@ -66,3 +66,13 @@ Por que usar Versionamento Semântico?
 >
 
 -fonte:http://semver.org/lang/pt-BR/-
+
+___________________________________________________________________________________________________________________
+
+2º Projeto - Git | Versionando o Arquivo README.md | v.0.1.1 
+============================================================
+
+Gerando 2 releases
+------------------
+
+>Nessa fase final você gerará um release da versão 0.1.0 de seu código; após isso, você fará mais alguns commits e também gerará um segundo release com a versão 0.1.1.
