@@ -1,0 +1,113 @@
+==================================================================
+===================RESUMO DOS ESTAGIOS DO GIT=====================
+==================================================================
+
+Configurando informações sobre o autor dos commits:
+---------------------------------------------------
+
+git config --global user.name "Nome"
+git config --global user.email "emailcontato@gmail.com"
+É possível alterar essas informações no arquivo ~/.gitconfig
+
+Criando um repositório local:
+-----------------------------
+mkdir meuprojeto
+cd meuprojeto
+cd .. // volta um diretório
+git init
+
+Para ter certeza que o repositório foi criado:
+----------------------------------------------
+git status
+
+
+Adicionando arquivos novos ou modificados no Stage(verde):
+---------------------------------------------------
+git add arquivo.txt
+git add *.py
+git add . (para add todos os arquivos)
+git add -i (para modo interativo. 1-5 ou 1,2,3,4 e -3 para retirar)
+
+
+Commits
+-------
+Apenas arquivos no Stage(verde) podem ser commitados.
+
+git commit -m "Mensagem"
+git commit -a -m "Mensagem" (commita também os arquivos versionados mesmo nao estando no Stage)
+
+
+Logs
+----
+
+Visualizando logs:
+
+git log
+git log --stat (Mostra o que foi modificado em cada commit)
+git log --before="2010-12-25" (Exibe commits antes do dia 25/12/2010)
+
+
+
+Removendo arquivos versionados e voltando a stages anteriores:
+------------------------------------------------------
+
+git reset HEAD arquivo.txt
+git reset HEAD~2 // volta dois commits
+git reset HEAD~3 // volta três commits
+git reset HEAD~1 --soft 
+git reset HEAD~1 --hard  // volta ao commit escolhido e apaga os arquivos // **cuidado**
+
+
+
+
+Voltando ao estado original
+---------------------------------------------------------
+
+Vamos imaginar que você possui um arquivo no controle de versão chamado arquivo.txt
+
+Imagine agora que você fez diversas alterações nesse arquivo, porém, por qualquer motivo, você se arrependeu de fazê-las (lembrando que você apenas fez as alterações, mas não as commitou). 
+Para você fazer o conteúdo do arquivo voltar ao estado original, digite:
+
+git checkout -- arquivo.txt
+
+Rodando esse comando, todos as alterações realizadas serão perdidas e o arquivo voltará exatamente como estava antes.
+
+Esse recurso é extremamente útil, porém deve ser usado com cuidado.
+
+fonte: Wesley William
+
+Branches - "são galhos de uma árvore" - ramificações de um projeto // "possibilita que vc consiga desenvolvel diversas funcionalidade ao mesmo tempo sem parar o seu software"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+uma sugestão é criar um novo branch para Cada nova funcionalidade do projeto.
+
+git branch (Lista o branch que você está e os branchs existentes)
+git checkout -b (cria um novo branch)
+git checkout master (Retorna ao branch master)
+
+
+*****Removendo um branch*******
+
+Após uma funcionalidade ser desenvolvida e o merge realizado, você poderá optar por remover o branch.
+
+Para remover um branch utilize o comando: git branch -D nome-do-branch
+
+O merge não reordena os commits e ainda muitas vezes gera um commit adicional para ser concluído.
+O rebase reordena os commits, não gerando assim um commit adicional. 
+
+Merge - Rebase ---- quando você precisar mesclar as alterações feitas em um branch para outro use o merge
+------------------------------------------------------------------------------------------------------------
+
+git merge "nome do branch" que vc deseja fazer a mesclagem
+git rebase "branch" -- (organiza os commits em ordem hierarquica) indicado para fazer apenas localmente
+
+
+
+
+Ignirando arquivo pra controle de versão
+-----------------------------------------------------------------------------------------------------------------------------
+
+criar um arquivo txt .gitignore
+colocar nome dos arquivos que devem ser ignorados linha a linha
+depois de cria-lo git add .gitignore
+git commit -m "add gitignore"
