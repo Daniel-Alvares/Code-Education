@@ -1,0 +1,25 @@
+==========================================================
+=================  RESUMO GITHUB  ========================
+==========================================================
+
+
+Criando uma chave publica e privada
+----------------------------------------------------------
+ 
+ssh-keygen
+
+cria dois arquivos um 
+id_rsa (chave privada) e id_rsa.pub(chave publica) 
+
+cat id_rsa.pub mostra o conteudo do arquivo
+adicionar uma nova chave no settings/ssh do github e colar o conteudo do arquivo.
+
+
+criando um novo repositorio no github
+-----------------------------------------------------------
+git remote add origin (url do repositorio endereco que voce vai fazer o push)
+git push origin master 
+
+
+
+
