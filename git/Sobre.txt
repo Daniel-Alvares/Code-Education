@@ -12,8 +12,8 @@ Sistemas de controle de versão
 ------------------------------
 Lembrando que o Git não é o único sistema de controle de versão. Há diversas outras opções no mercado.
 
-Segue abaixo uma pequena lista para você pelo menos ter conhecimento.
-
+Segue abaixo uma pequena lista dos programas de controle de versão mais conhecidos
+ 
 Opensource
 GIT
 CVS
