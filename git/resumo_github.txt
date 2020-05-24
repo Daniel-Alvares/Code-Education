@@ -36,6 +36,43 @@ v'a em settings dentro do repositorio / area danger / e depois confirmar a exclu
 
 
 
+criando tags e realeses
+------------------------------------------------------------
+git tag 0.1.0
+git tag -l (mostra todas a tags criadas local e remotamente)
+git push origin master --tags
+
+versionamento semantico
+------------------------------------------------------------
+e a forma organizado voce versiona o seu software - toda vez que adicionar uma funcionalidade
+
+v.0.0.0
+
+v.0 - versao major do seu software - normalmente quando altera a major version / muda tbm toda a compatibilidade ou estrutura do software.
+v.0.0 - minor version - uma versao dentro de uma versao. (toda vez que adcionar uma nova funcionalidade) ex. v0.1 - v0.2 - v0.3
+v.0.0.0 - e um path - quando vc encontra um bug e corrige / quando vc faz uma melhoria / faz uma alteracao / tem que manter a compatibilidade - v.0.1.1 - v.0.1.2 - v.0.1.3
+
+
+Mais sobre versionamento semântico
+
+Para você encontrar maiores informações sobre versionamento semântico acesse:
+
+http://semver.org/
+
+
+Push em tags e remoção
+-----------------------------------------------------------------------------------
+
+Muitas vezes você simplesmente precisa criar uma tag e depois dar push na mesma no repositório remoto (github por exemplo).
+
+Nesse caso, para que as tags sejam enviadas, utilize o comando:
+
+Agora se você quiser remover as tags criadas, utilize os comandos abaixo:
+
+git tag -d 0.1.0  (removendo tag localmente)
+git push origin :refs/tags/0.1.0 (removendo tag no repositório remoto)
+
+
 
 
 
