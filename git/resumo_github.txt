@@ -74,7 +74,52 @@ git push origin :refs/tags/0.1.0 (removendo tag no repositório remoto)
 
 
 
+Repositorio Bare
+---------------------------------------------------------------------------------
+ 
+Criando um repositorio local 
+
+git init --bare (o git cria um repositorio remoto local)
+git remote add local ssh://localhost/(caminho do diretorio bare)
+git push local master
 
 
 
+Trabalhando com Hooks
+-----------------------------------------------------------------------------------
+Possibidade de dar push nos arquivos alterados e automaticamente jogar os arquivos direto para a pasta do site.
+
+dentro do diretorio * Bare *
+acessar a pasta /hooks
+e criar um arquivo post-receive
+e dentro do arquivo digitar
+
+#!/bin/sh
+GIT_WORK_TREE=/(MEU SITE.COM.BR) git checkout -f
+salvar 
+
+e dar permissao 
+chmod +x post-receive
+
+tudo isso em ambiente unix
+
+
+
+Dicas em geral
+----------------------------------------------------------------------------------
+
+Tratando conflitos
+
+Quando voce tentar fazer um merge de uma branch e isso gerar conflito o git nao permitira que vc realiza o commit ate resolver o problema.
+sendo assim, vc tera que entrar no arquivo escolher qual alteracao vc deve manter.
+dar um git add NOME_DO_ARQUIVO
+e so entao, realizar o commit
+
+o git gerara um novo log resolvendo o conflinto
+
+
+
+
+====================================================================================================================================
+DONE
 
