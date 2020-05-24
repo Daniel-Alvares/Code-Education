@@ -76,7 +76,7 @@ Esse recurso é extremamente útil, porém deve ser usado com cuidado.
 
 fonte: Wesley William
 
-Branches - "são galhos de uma árvore" - ramificações de um projeto // "possibilita que vc consiga desenvolvel diversas funcionalidade ao mesmo tempo sem parar o seu software"
+Branches - "são galhos de uma árvore" - ramificações de um projeto // "possibilita que vc consiga desenvolver diversas funcionalidade ao mesmo tempo sem parar o seu software"
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 uma sugestão é criar um novo branch para Cada nova funcionalidade do projeto.
@@ -90,7 +90,9 @@ git checkout master (Retorna ao branch master)
 
 Após uma funcionalidade ser desenvolvida e o merge realizado, você poderá optar por remover o branch.
 
-Para remover um branch utilize o comando: git branch -D nome-do-branch
+Para remover um branch utilize o comando: 
+
+**** git branch -D nome-do-branch  ********
 
 O merge não reordena os commits e ainda muitas vezes gera um commit adicional para ser concluído.
 O rebase reordena os commits, não gerando assim um commit adicional. 
@@ -111,3 +113,15 @@ criar um arquivo txt .gitignore
 colocar nome dos arquivos que devem ser ignorados linha a linha
 depois de cria-lo git add .gitignore
 git commit -m "add gitignore"
+
+
+
+Apagando diretorios local e remoto
+-------------------------------------------------------------------------------------------------------------------
+
+    Primeiro certifique-se que o seu repositório está sincronizado com o repositório remoto: $ git pull origin master, (supondo que o branch seja master).
+    Então remova a pasta localmente: $ git rm -r NOME_DO_REPOSITORIO
+    Agora faça um commit das modificações: $ git commit -m "Remove pastas NOME_DO_REPOSITORIO"
+    Sincronize com repositório remoto: $ git push origin master
+
+Após essas mudanças o repositório remoto deve estar sem as pastas.
