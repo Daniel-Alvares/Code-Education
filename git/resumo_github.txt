@@ -23,6 +23,17 @@ git push origin master
 
 Como colaborar com um projeto no github
 -----------------------------------------------------------
+git pull request
+
+o que normalmente se faz e usar o botao (fork) do github *** ele faz uma copia do repositorio na sua conta git.
+
+
+
+Como apagar um repositorio no github
+-----------------------------------------------------------
+Para apagar um repositorio no github isso se faz apenas pelo site, nao da pra fazer pelo terminal do gitbash.
+v'a em settings dentro do repositorio / area danger / e depois confirmar a exclusao.
+
 
 
 
