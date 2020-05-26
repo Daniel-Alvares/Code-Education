@@ -118,6 +118,12 @@ e so entao, realizar o commit
 o git gerara um novo log resolvendo o conflinto
 
 
+Gerador de texto - MARKDOWN
+--------------------------------------------------------------------------------------
+
+https://pandao.github.io/editor.md/en.html
+
+
 
 
 ====================================================================================================================================
