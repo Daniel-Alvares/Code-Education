@@ -1,4 +1,4 @@
-Repositório de Exercicios - Projetos - Code Education
+Code Education 
 ==========================================================
 
 > Projetos
