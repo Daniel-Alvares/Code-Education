@@ -1,0 +1,19 @@
+## Instalação Php | Windows
+
+Resumo
+---------
+
+Para instalação do PHP no windows basta fazer o download do no site php.net
+
+(www.php.net)
+
+> download .zip
+
+descompactar em uma pasta no C:
+
+* - Indicar o caminho em variaveis de sistema no / Meu computador / sistema / comandos avançados / Path 
+
+
+
+
+
