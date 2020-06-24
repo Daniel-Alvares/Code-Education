@@ -1,0 +1,20 @@
+Comandos do PHP no terminal | cmd / power shell / git bash
+==================================================================
+
+
+php -v --> mostra a versao do php instalada
+
+php -a --> interactive shell - mostra todos os comandos 
+
+php -r --> interpreta o código sem que tenha as aberturas das tags do php ou criar um arquivo
+
+php -m --> lista todos os modulos que estao instalados
+
+php -m | grep intl --> mostra um módulo especifico
+
+php -i --> traz as informações do PHP 
+       |___-> se quiser uma informação especifica pode usar o php -i | grep xdbug
+
+
+
+
