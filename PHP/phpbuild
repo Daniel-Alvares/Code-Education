@@ -1,0 +1,13 @@
+Como fazer o PHP ser executado no browser?
+===========================================
+
+**sem a necessidade de instalar o apache.
+
+## bult-in server
+
+
+php -S localhost:[porta]
+
+
+
+

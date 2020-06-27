@@ -1,0 +1,23 @@
+<?php echo "Olá Mundo" ?>
+
+----------------------------------------------
+
+<?php include ("menu.php"); ?> quando ele não encontra o arquivo a aplicação continua rodando
+<?php include_once ("meunu.php"); ?> adiciona apenas uma vez
+		diferença
+
+<?php require ("menu.php") ?> quando o arquivo não é encontrado (fatal erro) mata a aplicação
+<?php require_once ("meunu.php"); ?> inclui apenas uma vez /// por padrão usar o require_once - Wesley
+------------------------------------------------
+
+<?php require_once($_GET[arquivo]); ?> 
+
+-----------------------------------------------
+
+PROTOCOLOS http (ESTUDAR)
+
+Método _GET -> recebe a URI inteira e você pode passar parametros 
+Método _POST -> quando a gente envia dados de forma _POST a gente informa que o metodo é post e podemos tbm passar outras informações embutidas nessa requisição. Podemos usar quando queremos inserir registros.
+Método _PUT -> Faz uma alteração
+Método _DELETE -> Apaga
+
